@@ -37,3 +37,6 @@ El código de operación (Opcode) es la parte de una instrucción de máquina qu
 - Patterson, D. A., & Hennessy, J. L. (2017). *Computer Organization and Design: The Hardware/Software Interface*. Morgan Kaufmann.
 - Tanenbaum, A. S., & Austin, T. (2013). *Structured Computer Organization*. Pearson.
 - Mano, M. M., & Kime, C. R. (2008). *Logic and Computer Design Fundamentals*. Prentice Hall.
+
+# Ejercicio 2
+El modelo de computador se compone de una CPU que recibe, decodifica y ejecuta instrucciones. Las recibe de la ROM, con la que se comunica por medio del registro A y el registro D, el registro A de la ROM recibe la señal de PC que tiene la dirección del siguiente programa, y através del registro D envía los datos de la instrucción a la CPU. La señal de Clk genera pulsos, dependiendo de la arquitectura, en cada pulso se ejecuta una instrucción simple o se necesitan varias para ejecutar una instrucción compleja. El computador se comunica a través de un elemento de memoria con el teclado y la pantalla.

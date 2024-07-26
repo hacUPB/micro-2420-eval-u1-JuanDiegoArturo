@@ -46,9 +46,9 @@ En la CPU, el fetch es buscar la instrucción en la ROM comunicandose con ella c
 
 # Ejercicio 6
 
-Las instrucciones Tipo A involucran operaciones aritméticas y lógicas. Por ejemplo, una instrucción Tipo A podría ser ADD R1, R2, R3, que suma los valores en los registros R2 y R3, y almacena el resultado en R1. 
+Las instrucciones Tipo A escriben en el registro A un número, en este computador, se usa para direccionar registros de entre más de 32k bytes de memoria 
 
-Las instrucciones Tipo C hacen operaciones de control de flujo y manipulación de memoria. Un ejemplo de instrucción Tipo C es JMP 0x0040, que hace que el procesador salte a la dirección de memoria 0x0040, alterando el flujo de ejecución del programa.
+Las instrucciones Tipo C hacen operaciones de control de flujo y manipulación de memoria. El arquetipo de instrucción tipo C es destino=operacion;salto y un ejemplo puede ser D = A que lee el valor del registro A y el destino es el registro D.
 
 # Ejercicio 7
 

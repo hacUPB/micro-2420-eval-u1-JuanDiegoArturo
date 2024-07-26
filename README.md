@@ -40,3 +40,16 @@ El código de operación (Opcode) es la parte de una instrucción de máquina qu
 
 # Ejercicio 2
 El modelo de computador se compone de una CPU que recibe, decodifica y ejecuta instrucciones. Las recibe de la ROM, con la que se comunica por medio del registro A y el registro D, el registro A de la ROM recibe la señal de PC que tiene la dirección del siguiente programa, y através del registro D envía los datos de la instrucción a la CPU. La señal de Clk genera pulsos, dependiendo de la arquitectura, en cada pulso se ejecuta una instrucción simple o se necesitan varias para ejecutar una instrucción compleja. El computador se comunica a través de un elemento de memoria con el teclado y la pantalla.
+
+# Ejercicio 4
+En la CPU, el fetch es buscar la instrucción en la ROM comunicandose con ella con los registros A y D, luego la CPU decodifica la instrucción internamente del lenguaje hexadecimal al lenguaje de máquina y finalmente la ejecuta.
+
+# Ejercicio 6
+
+Las instrucciones Tipo A involucran operaciones aritméticas y lógicas. Por ejemplo, una instrucción Tipo A podría ser ADD R1, R2, R3, que suma los valores en los registros R2 y R3, y almacena el resultado en R1. 
+
+Las instrucciones Tipo C hacen operaciones de control de flujo y manipulación de memoria. Un ejemplo de instrucción Tipo C es JMP 0x0040, que hace que el procesador salte a la dirección de memoria 0x0040, alterando el flujo de ejecución del programa.
+
+# Ejercicio 7
+
+Con los tres primeros bits, la CPU sabe si la instrucción es tipo A o C mediante un circuito lógico. El bit más significativo pasa por una compuerta NOT, si el resultado es 1, la instrucción es de tipo A. Los dos bits más significativos se los pasa por una AND y el resultado se hace otra AND con el tercer bit más significativo y si el resultado es 1, la instrucción es tipo C

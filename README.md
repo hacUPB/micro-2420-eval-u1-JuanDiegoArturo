@@ -53,3 +53,9 @@ Las instrucciones Tipo C hacen operaciones de control de flujo y manipulación d
 # Ejercicio 7
 
 Con los tres primeros bits, la CPU sabe si la instrucción es tipo A o C mediante un circuito lógico. El bit más significativo pasa por una compuerta NOT, si el resultado es 1, la instrucción es de tipo A. Los dos bits más significativos se los pasa por una AND y el resultado se hace otra AND con el tercer bit más significativo y si el resultado es 1, la instrucción es tipo C
+
+# Ejercicio 9
+
+El código utiliza las direcciones 16 y 17 de la RAM para guardar un contador "i" y un resultado "sum". Luego revisa el "i" para ver si es mayor o igual a 100 por medio de el registro D y el salto JLE, si es mayor el programa termina su ejecución pero si es menor suma el número "i" al acumulado "sum" y le suma 1 al contador "i". Finalmente se reinicia el ciclo por medio del salto JMP hasta que se cumpla la condición de i, cuando sucede esto el programa termina en un bucle en el que se pasa de la instrucción 19 a la instrucción 18 sin cambiar nada.
+
+De esta forma, sum = 1+2+3+...+100 = 4950 cuando i llega a 100
